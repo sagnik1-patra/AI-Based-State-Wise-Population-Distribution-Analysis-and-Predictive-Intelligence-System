@@ -1,0 +1,40 @@
+project:
+  name: AI-Based State-Wise Population Distribution Analysis and Predictive Intelligence
+    System
+  dataset: RS_Session_259_AU_88_1.csv
+  random_seed: 42
+data:
+  target_column: Persons
+  state_column: State/UT
+  feature_columns:
+  - Log_Persons
+  exclude_aggregate: true
+model:
+  type: Autoencoder
+  input_features: 1
+  hidden_layers:
+  - 16
+  - 8
+  - 2
+  - 8
+  - 16
+  activation: relu
+  output_activation: linear
+  optimizer: Adam
+  learning_rate: 0.001
+  loss: mse
+  epochs: 300
+  batch_size: 8
+  test_size: 0.25
+clustering:
+  algorithm: KMeans
+  n_clusters: 3
+  labels:
+  - Low
+  - Medium
+  - High
+files:
+  h5: population_model.h5
+  pkl: population_model.pkl
+  yaml: model_config.yaml
+  json: model_metadata.json

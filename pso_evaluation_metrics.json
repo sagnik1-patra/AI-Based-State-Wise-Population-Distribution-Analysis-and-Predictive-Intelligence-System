@@ -1,0 +1,11 @@
+{
+    "algorithm": "Particle Swarm Optimization",
+    "selected_model": "PSO-Optimized Autoencoder",
+    "evaluation_type": "Held-out reconstruction",
+    "MAE": 882150.6875,
+    "MSE": 1812290732032.0,
+    "RMSE": 1346213.4793679642,
+    "R2_Score": 0.7480979561805725,
+    "Silhouette_Score": 0.6053571701049805,
+    "Total_States": 35
+}

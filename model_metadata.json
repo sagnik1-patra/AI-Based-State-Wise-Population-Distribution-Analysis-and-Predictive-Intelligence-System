@@ -1,0 +1,52 @@
+{
+    "project_name": "AI-Based State-Wise Population Distribution Analysis and Predictive Intelligence System",
+    "created_at": "2026-11-06T09:10:18.652000",
+    "dataset": {
+        "filename": "RS_Session_259_AU_88_1.csv",
+        "state_records": 35,
+        "columns": [
+            "Sl. No.",
+            "State/UT",
+            "Persons",
+            "Log_Persons",
+            "Cluster",
+            "Population_Category",
+            "Reconstructed_Persons",
+            "Absolute_Error"
+        ],
+        "total_reported_persons": 41422917,
+        "minimum_persons": 6135,
+        "maximum_persons": 7901819,
+        "mean_persons": 1183511.9142857143
+    },
+    "model": {
+        "name": "Neural Network Autoencoder",
+        "purpose": "Reconstruction of observed counts",
+        "epochs_trained": 300,
+        "training_loss": 8.42260051285848e-05,
+        "validation_loss": 0.0008610874647274613
+    },
+    "evaluation": {
+        "mse": 61732833163.40963,
+        "rmse": 248460.92884678996,
+        "mae": 88500.02647569444,
+        "r2_score": 0.9898647342792907,
+        "metric_scope": "Held-out reconstruction"
+    },
+    "clustering": {
+        "algorithm": "KMeans",
+        "number_of_clusters": 3,
+        "silhouette_score": 0.6053571547074473,
+        "category_counts": {
+            "Low": 15,
+            "High": 10,
+            "Medium": 10
+        }
+    },
+    "limitations": [
+        "The meaning of Persons is not documented.",
+        "Only one numerical observation per state is available.",
+        "The model does not forecast future population.",
+        "Reconstruction scores are not forecasting accuracy."
+    ]
+}

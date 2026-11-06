@@ -1,0 +1,11 @@
+{
+    "algorithm": "AIS-CLONALG",
+    "selected_model": "AIS-Optimized",
+    "evaluation_type": "Held-out reconstruction",
+    "MAE": 1495710.625,
+    "MSE": 7619105259520.0,
+    "RMSE": 2760272.678472183,
+    "R2_Score": -0.0590289831161499,
+    "Silhouette_Score": 0.6053571701049805,
+    "Total_States": 35
+}

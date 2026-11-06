@@ -1,0 +1,21 @@
+{
+    "created_at": "2026-11-06T09:19:10.511295",
+    "algorithm": "Particle Swarm Optimization",
+    "selected_model": "PSO-Optimized Autoencoder",
+    "dataset_records": 35,
+    "total_persons": 41422917,
+    "best_training_fitness": 0.0016413300763815641,
+    "final_validation_loss": 0.08301501721143723,
+    "test_metrics": {
+        "MAE": 882150.6875,
+        "MSE": 1812290732032.0,
+        "RMSE": 1346213.4793679642,
+        "R2": 0.7480979561805725
+    },
+    "silhouette_score": 0.6053571701049805,
+    "limitations": [
+        "PSO optimizes reconstruction of observed values.",
+        "No future population forecasting is performed.",
+        "No temporal or independent predictor data is available."
+    ]
+}

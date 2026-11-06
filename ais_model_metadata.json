@@ -1,0 +1,20 @@
+{
+    "created_at": "2026-11-06T09:16:23.106398",
+    "algorithm": "AIS-CLONALG",
+    "selected_model": "AIS-Optimized",
+    "dataset_records": 35,
+    "total_persons": 41422917,
+    "best_training_fitness": 0.0011347443796694279,
+    "final_validation_loss": 0.0013408975210040808,
+    "test_metrics": {
+        "MAE": 1495710.625,
+        "MSE": 7619105259520.0,
+        "RMSE": 2760272.678472183,
+        "R2": -0.0590289831161499
+    },
+    "silhouette_score": 0.6053571701049805,
+    "limitations": [
+        "AIS optimizes reconstruction, not future forecasts.",
+        "No temporal or independent predictor data is available."
+    ]
+}

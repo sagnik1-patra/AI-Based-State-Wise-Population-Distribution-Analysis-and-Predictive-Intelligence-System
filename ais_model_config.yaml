@@ -1,0 +1,28 @@
+project: AI-Based State-Wise Population Distribution Analysis and Predictive Intelligence
+  System
+algorithm: Artificial Immune System
+optimization_method: Clonal Selection Algorithm
+dataset: RS_Session_259_AU_88_1.csv
+seed: 42
+ais_parameters:
+  population_size: 20
+  generations: 60
+  clone_factor: 4
+  mutation_rate: 0.15
+  random_replacements: 3
+  selection_size: 5
+neural_network:
+  architecture:
+  - 1
+  - 16
+  - 8
+  - 2
+  - 8
+  - 16
+  - 1
+  epochs: 150
+  batch_size: 8
+  learning_rate: 0.001
+evaluation:
+  type: Held-out reconstruction
+  test_size: 0.2

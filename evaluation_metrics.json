@@ -1,0 +1,10 @@
+{
+    "model": "Neural Network Autoencoder",
+    "evaluation_type": "In-sample reconstruction",
+    "MAE": 30374.085714285713,
+    "MSE": 16020188118.942858,
+    "RMSE": 126570.88179728723,
+    "R2_Score": 0.9937995722795772,
+    "total_states": 35,
+    "total_reported_persons": 41422917
+}
